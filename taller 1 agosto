@@ -5,7 +5,7 @@
   <title>Elementos semánticos del HTML5</title> 
 </head> 
 <body> 
-  <header> 
+  <header> soy el mas perron aqui 
     <h1>El Encabezado</h1> 
   </header> 
   <nav> 
