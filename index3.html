@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1,nota2,nota3;
+        nota1=prompt("ingrese primer nota");
+        nota2=prompt("ingrese segunda nota");
+        nota3=prompt("ingrese tercera nota");
+        let suma=parseFloat(nota1)+parseFloat(nota2)+parseFloat(nota3);
+        let division=parseFloat(suma)/3;
+        document.write("su nota es");
+        document.write(division);
+        if(division<3.0){
+            document.write('<br>');
+        document.write("perdio")
+        }else if(division>=3.0 && division<=4.0){
+            document.write('<br>');
+            document.write("paso apenas")
+        }else if(division>=4.0 && division<=5.0){
+            document.write('<br>');
+        document.write("al peluche")}
+        else if(division>5.0){
+            document.write('<br>');
+            document.write("sapo");
+        }
+        
+    </script>
+    
+</body>
+</html>
