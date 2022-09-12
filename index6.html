@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function montar(){
+        let fecha;
+        fecha=new Date();
+        document.write("hoy es ");
+        document.write(fecha.getDate()+"/");
+        document.write((fecha.getMount()+1)+"/");
+        document.write(fecha.getFullYear())+
+        document.write("<br>");
+        docuemnte.write("la hora es :");
+        document.write(fecha.getHours()+"/");
+        document.write((fecha.getMinutes()+1)+"/");
+        document.write(fecha.getSeconds()+"/");
+        document.write(fecha.getMilliseconds());
+       }
+
+       // montar();
+       let total=0;
+       function cargar(sueldos){
+        for(let i=0; i<sueldos.lenght; i++){
+            let v=prompt("ingrese sueldo:");
+            sueldos[i]=parseInt(v);
+        }
+    }
+     function suma(){
+        for(let i=0;i<sueldos.lenght; i++){
+            document.write(sueldos[i]+"<br>");
+            total+=sueldos[i];
+        }
+
+     }
+        let sueldos=new Array(4);
+        sueldos=new Array(4);
+        cargar(sueldos);
+       suma(sueldos);
+       document.write("el total de los sueldos es:"+total+"<br>");
+       
+       
+       montar();
+       let cargar=parseInt(prompt("ingrese un numero entre el 0 y el 9"))
+       let numero=parseInt(Math.random()*10);
+       if(numero==cargar){
+        document.write("gano la loteria!")
+       }else{
+        document.write("lo siento sigue intentando!")
+       }
+    </script>
+    
+</body>
+</html>
